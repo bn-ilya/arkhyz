@@ -14,10 +14,10 @@ function getArrayToArrayHuman($getArray)
             $row['age'] = $getArray["age_".$i];
             $row['gender'] = $getArray["checkbox_gender_".$i];
             $row['tent_status'] = $getArray['tent_status_'.$i];
-            $row['tent_use_id'] =($getArray['tent_status_'.$i] == "USE")?humanGetIdByName($getArray['tent_use_id_'.$i]):($getArray['tent_status_'.$i] == "PROVIDES")?humanGetMaxId()+1+$i:"";
+            $row['tent_use_id'] =($getArray['tent_status_'.$i] == "USE")?humanGetIdByName($getArray['tent_use_id_'.$i]):(($getArray['tent_status_'.$i] == "PROVIDES")?humanGetMaxId()+1+$i:"");
             $row['tent_places'] =($getArray['tent_status_'.$i] == "PROVIDES")?$getArray['tent_places_'.$i]:"";
             $row['car_status'] = $getArray['car_status_'.$i];
-            $row['car_use_id'] =($getArray['car_status_'.$i] == "USE")?humanGetIdByName($getArray['car_use_id_'.$i]):($getArray['car_status_'.$i] == "PROVIDES")?humanGetMaxId()+1+$i:"";
+            $row['car_use_id'] =($getArray['car_status_'.$i] == "USE")?humanGetIdByName($getArray['car_use_id_'.$i]):(($getArray['car_status_'.$i] == "PROVIDES")?humanGetMaxId()+1+$i:"");
             $row['car_places'] =($getArray['car_status_'.$i] == "PROVIDES")?$getArray['car_places_'.$i]:"";
             $row['dates_of_stay'] = getArrayToDateOfStay($getArray,$i);
             $row['parent'] = $getArray['id_0'];
