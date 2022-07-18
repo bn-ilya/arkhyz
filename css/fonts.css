@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+    src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"),
+             url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+             url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "TTNorms-Black";
+    src: url("../fonts/TTNorms/TTNorms-Black.eot");
+    src: url("../fonts/TTNorms/TTNorms-Black.eot?#iefix") format("embedded-opentype"),
+             url("../fonts/TTNorms/TTNorms-Black.woff") format("woff"),
+             url("../fonts/TTNorms/TTNorms-Black.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "TTNorms-Bold";
+    src: url("../fonts/TTNorms/TTNorms-Bold.eot");
+    src: url("../fonts/TTNorms/TTNorms-Bold.eot?#iefix") format("embedded-opentype"),
+             url("../fonts/TTNorms/TTNorms-Bold.woff") format("woff"),
+             url("../fonts/TTNorms/TTNorms-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "TTNorms-Medium";
+    src: url("../fonts/TTNorms/TTNorms-Medium.eot");
+    src: url("../fonts/TTNorms/TTNorms-Medium.eot?#iefix") format("embedded-opentype"),
+             url("../fonts/TTNorms/TTNorms-Medium.woff") format("woff"),
+             url("../fonts/TTNorms/TTNorms-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: Medium;
+}
+
+@font-face {
+    font-family: "TTNorms-Regular";
+    src: url("../fonts/TTNorms/TTNorms-Regular.eot");
+    src: url("../fonts/TTNorms/TTNorms-Regular.eot?#iefix") format("embedded-opentype"),
+             url("../fonts/TTNorms/TTNorms-Regular.woff") format("woff"),
+             url("../fonts/TTNorms/TTNorms-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: regular;
+}
+
+@font-face {
+    font-family: "TTNorms-Light";
+    src: url("../fonts/TTNorms/TTNorms-Light.eot");
+    src: url("../fonts/TTNorms/TTNorms-Light.eot?#iefix") format("embedded-opentype"),
+             url("../fonts/TTNorms/TTNorms-Light.woff") format("woff"),
+             url("../fonts/TTNorms/TTNorms-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Raleway-SemiBold";
+    src: <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    font-style: normal;
+    font-weight: 600;
+}
