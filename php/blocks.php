@@ -37,19 +37,19 @@ function pasteBlock_datesOfStay($id)
         <div class="reg__date-of-stay">
             <input type="checkbox" name="check-date1-id<?= $id ?>" class="check__default" id="check-one-id<?= $id ?>"
                    value="1" checked>
-            <label class="check" for="check-one-id<?= $id ?>">22</label>
+            <label class="check" for="check-one-id<?= $id ?>">18</label>
 
             <input type="checkbox" name="check-date2-id<?= $id ?>" class="check__default" id="check-two-id<?= $id ?>"
                    value="1" checked>
-            <label class="check" for="check-two-id<?= $id ?>">23</label>
+            <label class="check" for="check-two-id<?= $id ?>">19</label>
 
             <input type="checkbox" name="check-date3-id<?= $id ?>" class="check__default" id="check-three-id<?= $id ?>"
                    value="1" checked>
-            <label class="check" for="check-three-id<?= $id ?>">24</label>
+            <label class="check" for="check-three-id<?= $id ?>">20</label>
 
             <input type="checkbox" name="check-date4-id<?= $id ?>" class="check__default" id="check-four-id<?= $id ?>"
                    value="1" checked>
-            <label class="check" for="check-four-id<?= $id ?>">25</label>
+            <label class="check" for="check-four-id<?= $id ?>">21</label>
         </div>
     </div>
     <?php

@@ -18,31 +18,31 @@ function creditCalculator() {
                 thisTotalCredit += 0
             else if (age >= 2 && age <= 5) {
                 if (date1 == true)
-                    thisTotalCredit += 80
+                    thisTotalCredit += 175
                 if (date2 == true)
-                    thisTotalCredit += 80
+                    thisTotalCredit += 175
                 if (date3 == true)
-                    thisTotalCredit += 80
+                    thisTotalCredit += 175
                 if (date4 == true)
-                    thisTotalCredit += 50
+                    thisTotalCredit += 175
             } else if (age >= 6 && age <= 12) {
                 if (date1 == true)
-                    thisTotalCredit += 200
+                    thisTotalCredit += 300
                 if (date2 == true)
-                    thisTotalCredit += 200
+                    thisTotalCredit += 300
                 if (date3 == true)
-                    thisTotalCredit += 200
+                    thisTotalCredit += 300
                 if (date4 == true)
-                    thisTotalCredit += 100
+                    thisTotalCredit += 300
             } else if (age >= 13) {
                 if (date1 == true)
-                    thisTotalCredit += 280
+                    thisTotalCredit += 375
                 if (date2 == true)
-                    thisTotalCredit += 280
+                    thisTotalCredit += 375
                 if (date3 == true)
-                    thisTotalCredit += 280
+                    thisTotalCredit += 375
                 if (date4 == true)
-                    thisTotalCredit += 160
+                    thisTotalCredit += 375
             } else {
                 thisTotalCredit += 99999
             }
