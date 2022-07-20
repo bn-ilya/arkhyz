@@ -115,6 +115,8 @@
 </div>
 <?php require_once 'js/connect_js.php'; ?>
 <script>
+
+    
     //Создаем пустой humanArray для нормальной работы функций
     let humanArray = null;
 
@@ -155,6 +157,7 @@
 
     checkListen()
     //setTimeout(function (){checkListen()},1000)
+
 </script>
 
 

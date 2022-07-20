@@ -28,6 +28,63 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .modal-delete {
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background-color: rgba(0, 0, 0, .5);
+            opacity: 1;
+            z-index: 100;
+        }
+
+        .modal-delete__content {
+           
+            width: fit-content;
+            margin: 30px;
+            height: fit-content;
+            background-color: white;
+            z-index: 100;
+            padding: 20px;
+        }
+
+        .modal-delete__alert {
+            margin: 0 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .modal-delete__text {
+            font-family: "Manrope";
+            font-size: 14px;
+        }
+
+        .modal-delete__btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .modal-delete__btn {
+            font-family: "Manrope";
+            font-size: 14px;
+            padding: 10px 15px;
+            min-width: 70px;
+        }
+    
+        .hide {
+            display: none;
+        }
+    </style>
 </head>
 <body>
 <div class="container">
@@ -48,7 +105,35 @@
         ?>
     </div>
 </div>
+<div class="modal-delete hide">
+    <div class="modal-delete__content">
+        <div class="modal-delete__alert">
+            <span class="modal-delete__text">Вы действительно хотите удалить пользователя?</span>
+        </div>
+        <div class="modal-delete__btn-group">
+            <button class="modal-delete__btn">Да</button>
+            <button class="modal-delete__btn">Нет</button>
+        </div>
+    </div>
+</div>
 <?php require_once 'js/connect_js.php'; ?>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.list__btn').forEach(btn => {
+            btn.onpointerdown = e => {
+                let timeOut = setTimeout(e => {
+                    document.querySelector('.modal-delete').classList.remove('hide')
+                    btn.onclick = event => {
+                        event.preventDefault()
+                    }
+                }, 1000)
 
+                document.onpointerup = e => {
+                    clearTimeout(timeOut)
+                }
+            }
+        })
+    })
+</script>
 </body>
 </html>
